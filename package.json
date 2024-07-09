@@ -20,7 +20,7 @@
     "compile": "tsc -p tsconfig.build.json",
     "prebuild": "shx rm -rf lib/ && npm run test",
     "build": "npm run compile",
-    "prepare": "npm run build",
+    "prepare": "npm run compile",
     "generate:spn": "bash ./scripts/generate-service-principal.sh",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "changelog:condensed": "npm run changelog && node ./scripts/condenseChangelog.js"
